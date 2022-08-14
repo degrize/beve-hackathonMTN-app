@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20220814035122",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "don",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateDon",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "Don entity.\\n@author BEVE.",
+  "jpaMetamodelFiltering": false,
+  "name": "Don",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "numeromtn",
+      "otherEntityName": "transaction",
+      "relationshipName": "transaction",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "label",
+      "otherEntityName": "createurAfricain",
+      "relationshipName": "createurAfricain",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "prenom",
+      "otherEntityName": "donnateur",
+      "relationshipName": "donnateur",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,61 @@
+{
+  "applications": "*",
+  "changelogDate": "20220814035121",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "donnateur",
+  "fields": [
+    {
+      "fieldName": "nomDeFamille",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contact1",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "contact2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sexe",
+      "fieldType": "Sexe",
+      "fieldValues": "F,M,JE_PREFERE_NE_PAS_LE_DIRE"
+    },
+    {
+      "fieldName": "dateDeNaissance",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pays",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateDebut",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "forfait",
+      "fieldType": "Forfait",
+      "fieldValues": "AUJOURD_HUI,JOUR,MOIS,ANNEE"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "Donnateur entity.\\n@author BEVE.",
+  "jpaMetamodelFiltering": false,
+  "name": "Donnateur",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

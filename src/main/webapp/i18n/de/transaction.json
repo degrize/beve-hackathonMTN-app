@@ -1,0 +1,27 @@
+{
+  "beveApp": {
+    "transaction": {
+      "home": {
+        "title": "Transactions",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Transaction erstellen",
+        "createOrEditLabel": "Transaction erstellen oder bearbeiten",
+        "notFound": "Keine Transactions gefunden"
+      },
+      "created": "Transaction erstellt mit ID {{ param }}",
+      "updated": "Transaction aktualisiert mit ID {{ param }}",
+      "deleted": "Transaction gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Transaction {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Transaction"
+      },
+      "id": "ID",
+      "numeromtn": "Numeromtn",
+      "montant": "Montant",
+      "devise": "Devise",
+      "dateTransaction": "Date Transaction"
+    }
+  }
+}

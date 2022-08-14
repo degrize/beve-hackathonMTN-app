@@ -1,0 +1,26 @@
+{
+  "applications": "*",
+  "changelogDate": "20220814035123",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "inspiration",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "articleInspiration",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "not an ignored comment",
+  "jpaMetamodelFiltering": false,
+  "name": "Inspiration",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

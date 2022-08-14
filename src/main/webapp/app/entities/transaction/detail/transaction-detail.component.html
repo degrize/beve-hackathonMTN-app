@@ -1,0 +1,44 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="transaction">
+      <h2 data-cy="transactionDetailsHeading"><span jhiTranslate="beveApp.transaction.detail.title">Transaction</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ transaction.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.transaction.numeromtn">Numeromtn</span></dt>
+        <dd>
+          <span>{{ transaction.numeromtn }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.transaction.montant">Montant</span></dt>
+        <dd>
+          <span>{{ transaction.montant }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.transaction.devise">Devise</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'beveApp.Devise.' + transaction.devise }}">{{ transaction.devise }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.transaction.dateTransaction">Date Transaction</span></dt>
+        <dd>
+          <span>{{ transaction.dateTransaction | formatMediumDate }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Retour</span>
+      </button>
+
+      <button type="button" [routerLink]="['/transaction', transaction.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editer</span>
+      </button>
+    </div>
+  </div>
+</div>

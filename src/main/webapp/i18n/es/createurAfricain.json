@@ -1,0 +1,37 @@
+{
+  "beveApp": {
+    "createurAfricain": {
+      "home": {
+        "title": "Createur Africains",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Createur Africain",
+        "createOrEditLabel": "Crear o editar Createur Africain",
+        "notFound": "Ningún Createur Africains encontrado"
+      },
+      "created": "Un nuevo Createur Africain ha sido creado con el identificador {{ param }}",
+      "updated": "Un Createur Africain ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Createur Africain ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Createur Africain {{ id }}?"
+      },
+      "detail": {
+        "title": "Createur Africain"
+      },
+      "id": "ID",
+      "nomDeFamille": "Nom De Famille",
+      "prenom": "Prenom",
+      "label": "Label",
+      "surnom": "Surnom",
+      "contact1": "Contact 1",
+      "contact2": "Contact 2",
+      "sexe": "Sexe",
+      "email": "Email",
+      "dateDeNaissance": "Date De Naissance",
+      "pays": "Pays",
+      "ville": "Ville",
+      "adresse": "Adresse",
+      "situationMatrimoniale": "Situation Matrimoniale",
+      "dateDebut": "Date Debut"
+    }
+  }
+}

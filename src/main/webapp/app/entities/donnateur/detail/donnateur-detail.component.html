@@ -1,0 +1,68 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="donnateur">
+      <h2 data-cy="donnateurDetailsHeading"><span jhiTranslate="beveApp.donnateur.detail.title">Donnateur</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ donnateur.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.donnateur.nomDeFamille">Nom De Famille</span></dt>
+        <dd>
+          <span>{{ donnateur.nomDeFamille }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.donnateur.prenom">Prenom</span></dt>
+        <dd>
+          <span>{{ donnateur.prenom }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.donnateur.contact1">Contact 1</span></dt>
+        <dd>
+          <span>{{ donnateur.contact1 }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.donnateur.contact2">Contact 2</span></dt>
+        <dd>
+          <span>{{ donnateur.contact2 }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.donnateur.email">Email</span></dt>
+        <dd>
+          <span>{{ donnateur.email }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.donnateur.sexe">Sexe</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'beveApp.Sexe.' + donnateur.sexe }}">{{ donnateur.sexe }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.donnateur.dateDeNaissance">Date De Naissance</span></dt>
+        <dd>
+          <span>{{ donnateur.dateDeNaissance }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.donnateur.pays">Pays</span></dt>
+        <dd>
+          <span>{{ donnateur.pays }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.donnateur.dateDebut">Date Debut</span></dt>
+        <dd>
+          <span>{{ donnateur.dateDebut | formatMediumDate }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.donnateur.forfait">Forfait</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'beveApp.Forfait.' + donnateur.forfait }}">{{ donnateur.forfait }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Retour</span>
+      </button>
+
+      <button type="button" [routerLink]="['/donnateur', donnateur.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editer</span>
+      </button>
+    </div>
+  </div>
+</div>
