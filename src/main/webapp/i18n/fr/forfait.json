@@ -1,0 +1,11 @@
+{
+  "beveApp": {
+    "Forfait": {
+      "null": "",
+      "AUJOURD_HUI": "AUJOURD_HUI",
+      "JOUR": "JOUR",
+      "MOIS": "MOIS",
+      "ANNEE": "ANNEE"
+    }
+  }
+}

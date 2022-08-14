@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "changelogDate": "20220814035301",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "reseaux_sociaux",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "nomChaine",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lienChaine",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ReseauxSociaux",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

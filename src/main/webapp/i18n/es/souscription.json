@@ -1,0 +1,26 @@
+{
+  "beveApp": {
+    "souscription": {
+      "home": {
+        "title": "Souscriptions",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Souscription",
+        "createOrEditLabel": "Crear o editar Souscription",
+        "notFound": "Ningún Souscriptions encontrado"
+      },
+      "created": "Un nuevo Souscription ha sido creado con el identificador {{ param }}",
+      "updated": "Un Souscription ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Souscription ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Souscription {{ id }}?"
+      },
+      "detail": {
+        "title": "Souscription"
+      },
+      "id": "ID",
+      "etat": "Etat",
+      "montant": "Montant",
+      "pourcentageDuDon": "Pourcentage Du Don"
+    }
+  }
+}

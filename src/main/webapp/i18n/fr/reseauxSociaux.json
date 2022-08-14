@@ -1,0 +1,26 @@
+{
+  "beveApp": {
+    "reseauxSociaux": {
+      "home": {
+        "title": "ReseauxSociauxes",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Reseaux Sociaux",
+        "createOrEditLabel": "Créer ou éditer un Reseaux Sociaux",
+        "notFound": "Aucun Reseaux Sociaux trouvé"
+      },
+      "created": "Un nouveau Reseaux Sociaux a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Reseaux Sociaux avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Reseaux Sociaux avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Reseaux Sociaux {{ id }} ?"
+      },
+      "detail": {
+        "title": "Reseaux Sociaux"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "nomChaine": "Nom Chaine",
+      "lienChaine": "Lien Chaine"
+    }
+  }
+}

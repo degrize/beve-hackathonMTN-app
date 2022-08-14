@@ -1,0 +1,33 @@
+{
+  "beveApp": {
+    "donnateur": {
+      "home": {
+        "title": "Donnateurs",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Donnateur",
+        "createOrEditLabel": "Crear o editar Donnateur",
+        "notFound": "Ningún Donnateurs encontrado"
+      },
+      "created": "Un nuevo Donnateur ha sido creado con el identificador {{ param }}",
+      "updated": "Un Donnateur ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Donnateur ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Donnateur {{ id }}?"
+      },
+      "detail": {
+        "title": "Donnateur"
+      },
+      "id": "ID",
+      "nomDeFamille": "Nom De Famille",
+      "prenom": "Prenom",
+      "contact1": "Contact 1",
+      "contact2": "Contact 2",
+      "email": "Email",
+      "sexe": "Sexe",
+      "dateDeNaissance": "Date De Naissance",
+      "pays": "Pays",
+      "dateDebut": "Date Debut",
+      "forfait": "Forfait"
+    }
+  }
+}
