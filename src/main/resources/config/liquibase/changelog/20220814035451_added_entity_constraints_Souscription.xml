@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Souscription.
+    -->
+    <changeSet id="20220814035451-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="souscription_id"
+                                 baseTableName="rel_souscription__createur_africain"
+                                 constraintName="fk_rel_souscription__createur_africain__souscription_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="souscription"/>
+
+        <addForeignKeyConstraint baseColumnNames="createur_africain_id"
+                                 baseTableName="rel_souscription__createur_africain"
+                                 constraintName="fk_rel_souscription__createur_africain__createur_africain_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="createur_africain"/>
+    </changeSet>
+</databaseChangeLog>

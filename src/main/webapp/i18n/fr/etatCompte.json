@@ -1,0 +1,9 @@
+{
+  "beveApp": {
+    "EtatCompte": {
+      "null": "",
+      "PREMIUM": "PREMIUM",
+      "NORMAL": "NORMAL"
+    }
+  }
+}
