@@ -1,0 +1,142 @@
+/**
+ * Donnateur entity.
+ * @author BEVE.
+ */
+entity Donnateur {
+	nomDeFamille String required,
+    prenom String,
+    contact1 String required,
+    contact2 String,
+    email String,
+    sexe Sexe,
+    dateDeNaissance String,
+    pays String,
+    dateDebut LocalDate,
+    forfait Forfait
+}
+
+/**
+ * Don entity.
+ * @author BEVE.
+ */
+entity Don {
+    description String,
+    dateDon LocalDate
+}
+
+
+
+// an ignored comment
+/** not an ignored comment */
+entity Inspiration {
+	nomInspirateur String required,
+    articleInspiration String
+}
+
+/**
+ * CreateurAfricain entity.
+ * @author BEVE.
+ */
+entity CreateurAfricain {
+	nomDeFamille String required,
+    prenom String required,
+    label String required,
+    surnom String,
+    contact1 String required,
+    contact2 String,
+    sexe Sexe required,
+    email String required,
+    dateDeNaissance String,
+    pays String required,
+    ville String,
+    adresse String,
+    situationMatrimoniale SituationMatrimoniale,
+    dateDebut LocalDate,
+    
+}
+
+entity NatureCreateur{
+	type String,
+    description String
+}
+
+entity Transaction {
+	numeroMTN String required,
+    montant Double required,
+    devise Devise required,
+	dateTransaction LocalDate required,
+}
+
+entity Souscription {
+	etatCompte EtatCompte required,
+    montant Double required,
+    pourcentageDuDon Double required,
+    
+}
+
+entity ReseauxSociaux {
+	nom String required,
+    nomChaine String,
+    lienChaine String
+}
+
+enum Sexe {
+	F, M, JE_PREFERE_NE_PAS_LE_DIRE
+}
+
+enum Devise {
+	EURO,
+    CEDI,
+    DLASI,
+    DOLLAR,
+    FCFA,
+    LIVRE,
+    LEONE,
+    NAIRA,
+    YEN
+}
+
+
+enum Forfait {
+	AUJOURD_HUI,
+    JOUR,
+    MOIS,
+    ANNEE
+}
+
+enum EtatCompte {
+	PREMIUM,
+    NORMAL
+}
+
+enum SituationMatrimoniale {
+    CELIBATAIRE, FIANCE, CONCUBINAGE, MARIE, VEUF(VE), JE_PREFERE_NE_PAS_LE_DIRE
+}
+
+
+relationship ManyToMany {
+	CreateurAfricain{inspiration(nomInspirateur)} to Inspiration{createurAfricain(label)},
+    CreateurAfricain{natureCreateur(type)} to NatureCreateur{createurAfricain(label)},
+    CreateurAfricain{reseauxSociaux(typeReseauSocial)} to ReseauxSociaux{createurAfricain(label)}
+	Souscription{createurAfricain(label)} to CreateurAfricain{souscription(etatCompte)}
+}
+
+relationship ManyToOne {
+   	Don{transaction(numeroMTN)} to Transaction,
+    Don{createurAfricain(label)} to CreateurAfricain,
+    Don{donnateur(prenom)} to Donnateur,
+    
+}
+
+
+// Set pagination options
+paginate all with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
