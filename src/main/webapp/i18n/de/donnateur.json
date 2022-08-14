@@ -1,0 +1,33 @@
+{
+  "beveApp": {
+    "donnateur": {
+      "home": {
+        "title": "Donnateurs",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Donnateur erstellen",
+        "createOrEditLabel": "Donnateur erstellen oder bearbeiten",
+        "notFound": "Keine Donnateurs gefunden"
+      },
+      "created": "Donnateur erstellt mit ID {{ param }}",
+      "updated": "Donnateur aktualisiert mit ID {{ param }}",
+      "deleted": "Donnateur gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Donnateur {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Donnateur"
+      },
+      "id": "ID",
+      "nomDeFamille": "Nom De Famille",
+      "prenom": "Prenom",
+      "contact1": "Contact 1",
+      "contact2": "Contact 2",
+      "email": "Email",
+      "sexe": "Sexe",
+      "dateDeNaissance": "Date De Naissance",
+      "pays": "Pays",
+      "dateDebut": "Date Debut",
+      "forfait": "Forfait"
+    }
+  }
+}

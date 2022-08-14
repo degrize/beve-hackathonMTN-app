@@ -7,6 +7,14 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entités",
+        "donnateur": "Donnateur",
+        "don": "Don",
+        "inspiration": "Inspiration",
+        "createurAfricain": "Createur Africain",
+        "categorieCreateur": "Categorie Createur",
+        "transaction": "Transaction",
+        "souscription": "Souscription",
+        "reseauxSociaux": "Reseaux Sociaux",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

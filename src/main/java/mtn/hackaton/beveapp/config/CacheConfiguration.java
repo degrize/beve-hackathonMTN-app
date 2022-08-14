@@ -48,6 +48,22 @@ public class CacheConfiguration {
             createCache(cm, mtn.hackaton.beveapp.domain.User.class.getName());
             createCache(cm, mtn.hackaton.beveapp.domain.Authority.class.getName());
             createCache(cm, mtn.hackaton.beveapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, mtn.hackaton.beveapp.domain.Donnateur.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.Don.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.Inspiration.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.Inspiration.class.getName() + ".createurAfricains");
+            createCache(cm, mtn.hackaton.beveapp.domain.CreateurAfricain.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.CreateurAfricain.class.getName() + ".inspirations");
+            createCache(cm, mtn.hackaton.beveapp.domain.CreateurAfricain.class.getName() + ".categorieCreateurs");
+            createCache(cm, mtn.hackaton.beveapp.domain.CreateurAfricain.class.getName() + ".reseauxSociauxes");
+            createCache(cm, mtn.hackaton.beveapp.domain.CreateurAfricain.class.getName() + ".souscriptions");
+            createCache(cm, mtn.hackaton.beveapp.domain.CategorieCreateur.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.CategorieCreateur.class.getName() + ".createurAfricains");
+            createCache(cm, mtn.hackaton.beveapp.domain.Transaction.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.Souscription.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.Souscription.class.getName() + ".createurAfricains");
+            createCache(cm, mtn.hackaton.beveapp.domain.ReseauxSociaux.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.ReseauxSociaux.class.getName() + ".createurAfricains");
             // jhipster-needle-ehcache-add-entry
         };
     }
