@@ -1,0 +1,82 @@
+{
+  "applications": "*",
+  "changelogDate": "20220814035124",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "createur_africain",
+  "fields": [
+    {
+      "fieldName": "nomDeFamille",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "label",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "surnom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contact1",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "contact2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sexe",
+      "fieldType": "Sexe",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "F,M,JE_PREFERE_NE_PAS_LE_DIRE"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dateDeNaissance",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pays",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "ville",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "situationMatrimoniale",
+      "fieldType": "SituationMatrimoniale",
+      "fieldValues": "CELIBATAIRE,FIANCE,CONCUBINAGE,MARIE,VEUF,JE_PREFERE_NE_PAS_LE_DIRE"
+    },
+    {
+      "fieldName": "dateDebut",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "CreateurAfricain entity.\\n@author BEVE.",
+  "jpaMetamodelFiltering": false,
+  "name": "CreateurAfricain",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

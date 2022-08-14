@@ -1,0 +1,25 @@
+{
+  "beveApp": {
+    "natureCreateur": {
+      "home": {
+        "title": "Nature Createurs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Nature Createur",
+        "createOrEditLabel": "Create or edit a Nature Createur",
+        "notFound": "No Nature Createurs found"
+      },
+      "created": "A new Nature Createur is created with identifier {{ param }}",
+      "updated": "A Nature Createur is updated with identifier {{ param }}",
+      "deleted": "A Nature Createur is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Nature Createur {{ id }}?"
+      },
+      "detail": {
+        "title": "Nature Createur"
+      },
+      "id": "ID",
+      "type": "Type",
+      "description": "Description"
+    }
+  }
+}

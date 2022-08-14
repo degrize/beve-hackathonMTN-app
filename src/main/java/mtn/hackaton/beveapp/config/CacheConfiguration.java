@@ -48,6 +48,14 @@ public class CacheConfiguration {
             createCache(cm, mtn.hackaton.beveapp.domain.User.class.getName());
             createCache(cm, mtn.hackaton.beveapp.domain.Authority.class.getName());
             createCache(cm, mtn.hackaton.beveapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, mtn.hackaton.beveapp.domain.Donnateur.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.Don.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.Inspiration.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.CreateurAfricain.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.NatureCreateur.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.Transaction.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.Souscription.class.getName());
+            createCache(cm, mtn.hackaton.beveapp.domain.ReseauxSociaux.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

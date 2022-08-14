@@ -1,0 +1,28 @@
+{
+  "beveApp": {
+    "don": {
+      "home": {
+        "title": "Dons",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Don",
+        "createOrEditLabel": "Crear o editar Don",
+        "notFound": "Ningún Dons encontrado"
+      },
+      "created": "Un nuevo Don ha sido creado con el identificador {{ param }}",
+      "updated": "Un Don ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Don ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Don {{ id }}?"
+      },
+      "detail": {
+        "title": "Don"
+      },
+      "id": "ID",
+      "description": "Description",
+      "dateDon": "Date Don",
+      "transaction": "Transaction",
+      "createurAfricain": "Createur Africain",
+      "donnateur": "Donnateur"
+    }
+  }
+}
