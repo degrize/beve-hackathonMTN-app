@@ -1,0 +1,40 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="reseauxSociaux">
+      <h2 data-cy="reseauxSociauxDetailsHeading"><span jhiTranslate="beveApp.reseauxSociaux.detail.title">Reseaux Sociaux</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ reseauxSociaux.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.reseauxSociaux.nom">Nom</span></dt>
+        <dd>
+          <span>{{ reseauxSociaux.nom }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.reseauxSociaux.nomChaine">Nom Chaine</span></dt>
+        <dd>
+          <span>{{ reseauxSociaux.nomChaine }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.reseauxSociaux.lienChaine">Lien Chaine</span></dt>
+        <dd>
+          <span>{{ reseauxSociaux.lienChaine }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Retour</span>
+      </button>
+
+      <button type="button" [routerLink]="['/reseaux-sociaux', reseauxSociaux.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editer</span>
+      </button>
+    </div>
+  </div>
+</div>

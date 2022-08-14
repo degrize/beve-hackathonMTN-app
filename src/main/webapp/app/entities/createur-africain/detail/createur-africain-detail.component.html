@@ -1,0 +1,86 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="createurAfricain">
+      <h2 data-cy="createurAfricainDetailsHeading"><span jhiTranslate="beveApp.createurAfricain.detail.title">Createur Africain</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ createurAfricain.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.nomDeFamille">Nom De Famille</span></dt>
+        <dd>
+          <span>{{ createurAfricain.nomDeFamille }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.prenom">Prenom</span></dt>
+        <dd>
+          <span>{{ createurAfricain.prenom }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.label">Label</span></dt>
+        <dd>
+          <span>{{ createurAfricain.label }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.surnom">Surnom</span></dt>
+        <dd>
+          <span>{{ createurAfricain.surnom }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.contact1">Contact 1</span></dt>
+        <dd>
+          <span>{{ createurAfricain.contact1 }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.contact2">Contact 2</span></dt>
+        <dd>
+          <span>{{ createurAfricain.contact2 }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.sexe">Sexe</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'beveApp.Sexe.' + createurAfricain.sexe }}">{{ createurAfricain.sexe }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.email">Email</span></dt>
+        <dd>
+          <span>{{ createurAfricain.email }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.dateDeNaissance">Date De Naissance</span></dt>
+        <dd>
+          <span>{{ createurAfricain.dateDeNaissance }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.pays">Pays</span></dt>
+        <dd>
+          <span>{{ createurAfricain.pays }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.ville">Ville</span></dt>
+        <dd>
+          <span>{{ createurAfricain.ville }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.adresse">Adresse</span></dt>
+        <dd>
+          <span>{{ createurAfricain.adresse }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.situationMatrimoniale">Situation Matrimoniale</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'beveApp.SituationMatrimoniale.' + createurAfricain.situationMatrimoniale }}">{{
+            createurAfricain.situationMatrimoniale
+          }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.createurAfricain.dateDebut">Date Debut</span></dt>
+        <dd>
+          <span>{{ createurAfricain.dateDebut | formatMediumDate }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Retour</span>
+      </button>
+
+      <button type="button" [routerLink]="['/createur-africain', createurAfricain.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editer</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "beveApp": {
+    "inspiration": {
+      "home": {
+        "title": "Inspirations",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Inspiration",
+        "createOrEditLabel": "Créer ou éditer un Inspiration",
+        "notFound": "Aucun Inspiration trouvé"
+      },
+      "created": "Un nouveau Inspiration a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Inspiration avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Inspiration avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Inspiration {{ id }} ?"
+      },
+      "detail": {
+        "title": "Inspiration"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "articleInspiration": "Article Inspiration"
+    }
+  }
+}

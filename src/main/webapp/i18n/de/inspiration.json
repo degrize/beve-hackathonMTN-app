@@ -1,0 +1,25 @@
+{
+  "beveApp": {
+    "inspiration": {
+      "home": {
+        "title": "Inspirations",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Inspiration erstellen",
+        "createOrEditLabel": "Inspiration erstellen oder bearbeiten",
+        "notFound": "Keine Inspirations gefunden"
+      },
+      "created": "Inspiration erstellt mit ID {{ param }}",
+      "updated": "Inspiration aktualisiert mit ID {{ param }}",
+      "deleted": "Inspiration gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Inspiration {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Inspiration"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "articleInspiration": "Article Inspiration"
+    }
+  }
+}

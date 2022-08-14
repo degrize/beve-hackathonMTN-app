@@ -1,0 +1,197 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2
+        id="jhi-createur-africain-heading"
+        data-cy="CreateurAfricainCreateUpdateHeading"
+        jhiTranslate="beveApp.createurAfricain.home.createOrEditLabel"
+      >
+        Créer ou éditer un Createur Africain
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="row mb-3" *ngIf="editForm.controls.id.value !== null">
+          <label class="form-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.nomDeFamille" for="field_nomDeFamille">Nom De Famille</label>
+          <input
+            type="text"
+            class="form-control"
+            name="nomDeFamille"
+            id="field_nomDeFamille"
+            data-cy="nomDeFamille"
+            formControlName="nomDeFamille"
+          />
+          <div
+            *ngIf="editForm.get('nomDeFamille')!.invalid && (editForm.get('nomDeFamille')!.dirty || editForm.get('nomDeFamille')!.touched)"
+          >
+            <small
+              class="form-text text-danger"
+              *ngIf="editForm.get('nomDeFamille')?.errors?.required"
+              jhiTranslate="entity.validation.required"
+            >
+              Ce champ est obligatoire.
+            </small>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.prenom" for="field_prenom">Prenom</label>
+          <input type="text" class="form-control" name="prenom" id="field_prenom" data-cy="prenom" formControlName="prenom" />
+          <div *ngIf="editForm.get('prenom')!.invalid && (editForm.get('prenom')!.dirty || editForm.get('prenom')!.touched)">
+            <small class="form-text text-danger" *ngIf="editForm.get('prenom')?.errors?.required" jhiTranslate="entity.validation.required">
+              Ce champ est obligatoire.
+            </small>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.label" for="field_label">Label</label>
+          <input type="text" class="form-control" name="label" id="field_label" data-cy="label" formControlName="label" />
+          <div *ngIf="editForm.get('label')!.invalid && (editForm.get('label')!.dirty || editForm.get('label')!.touched)">
+            <small class="form-text text-danger" *ngIf="editForm.get('label')?.errors?.required" jhiTranslate="entity.validation.required">
+              Ce champ est obligatoire.
+            </small>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.surnom" for="field_surnom">Surnom</label>
+          <input type="text" class="form-control" name="surnom" id="field_surnom" data-cy="surnom" formControlName="surnom" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.contact1" for="field_contact1">Contact 1</label>
+          <input type="text" class="form-control" name="contact1" id="field_contact1" data-cy="contact1" formControlName="contact1" />
+          <div *ngIf="editForm.get('contact1')!.invalid && (editForm.get('contact1')!.dirty || editForm.get('contact1')!.touched)">
+            <small
+              class="form-text text-danger"
+              *ngIf="editForm.get('contact1')?.errors?.required"
+              jhiTranslate="entity.validation.required"
+            >
+              Ce champ est obligatoire.
+            </small>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.contact2" for="field_contact2">Contact 2</label>
+          <input type="text" class="form-control" name="contact2" id="field_contact2" data-cy="contact2" formControlName="contact2" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.sexe" for="field_sexe">Sexe</label>
+          <select class="form-control" name="sexe" formControlName="sexe" id="field_sexe" data-cy="sexe">
+            <option [ngValue]="null">{{ 'beveApp.Sexe.null' | translate }}</option>
+            <option *ngFor="let sexe of sexeValues" [value]="sexe">{{ 'beveApp.Sexe.' + sexe | translate }}</option>
+          </select>
+          <div *ngIf="editForm.get('sexe')!.invalid && (editForm.get('sexe')!.dirty || editForm.get('sexe')!.touched)">
+            <small class="form-text text-danger" *ngIf="editForm.get('sexe')?.errors?.required" jhiTranslate="entity.validation.required">
+              Ce champ est obligatoire.
+            </small>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.email" for="field_email">Email</label>
+          <input type="text" class="form-control" name="email" id="field_email" data-cy="email" formControlName="email" />
+          <div *ngIf="editForm.get('email')!.invalid && (editForm.get('email')!.dirty || editForm.get('email')!.touched)">
+            <small class="form-text text-danger" *ngIf="editForm.get('email')?.errors?.required" jhiTranslate="entity.validation.required">
+              Ce champ est obligatoire.
+            </small>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.dateDeNaissance" for="field_dateDeNaissance"
+            >Date De Naissance</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="dateDeNaissance"
+            id="field_dateDeNaissance"
+            data-cy="dateDeNaissance"
+            formControlName="dateDeNaissance"
+          />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.pays" for="field_pays">Pays</label>
+          <input type="text" class="form-control" name="pays" id="field_pays" data-cy="pays" formControlName="pays" />
+          <div *ngIf="editForm.get('pays')!.invalid && (editForm.get('pays')!.dirty || editForm.get('pays')!.touched)">
+            <small class="form-text text-danger" *ngIf="editForm.get('pays')?.errors?.required" jhiTranslate="entity.validation.required">
+              Ce champ est obligatoire.
+            </small>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.ville" for="field_ville">Ville</label>
+          <input type="text" class="form-control" name="ville" id="field_ville" data-cy="ville" formControlName="ville" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.adresse" for="field_adresse">Adresse</label>
+          <input type="text" class="form-control" name="adresse" id="field_adresse" data-cy="adresse" formControlName="adresse" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.situationMatrimoniale" for="field_situationMatrimoniale"
+            >Situation Matrimoniale</label
+          >
+          <select
+            class="form-control"
+            name="situationMatrimoniale"
+            formControlName="situationMatrimoniale"
+            id="field_situationMatrimoniale"
+            data-cy="situationMatrimoniale"
+          >
+            <option [ngValue]="null">{{ 'beveApp.SituationMatrimoniale.null' | translate }}</option>
+            <option *ngFor="let situationMatrimoniale of situationMatrimonialeValues" [value]="situationMatrimoniale">
+              {{ 'beveApp.SituationMatrimoniale.' + situationMatrimoniale | translate }}
+            </option>
+          </select>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="beveApp.createurAfricain.dateDebut" for="field_dateDebut">Date Debut</label>
+          <div class="input-group">
+            <input
+              id="field_dateDebut"
+              data-cy="dateDebut"
+              type="text"
+              class="form-control"
+              name="dateDebut"
+              ngbDatepicker
+              #dateDebutDp="ngbDatepicker"
+              formControlName="dateDebut"
+            />
+            <button type="button" class="btn btn-secondary" (click)="dateDebutDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Annuler</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Sauvegarder</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
