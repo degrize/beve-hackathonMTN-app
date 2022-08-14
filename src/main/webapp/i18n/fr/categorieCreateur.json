@@ -1,0 +1,26 @@
+{
+  "beveApp": {
+    "categorieCreateur": {
+      "home": {
+        "title": "CategorieCreateurs",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Categorie Createur",
+        "createOrEditLabel": "Créer ou éditer un Categorie Createur",
+        "notFound": "Aucun Categorie Createur trouvé"
+      },
+      "created": "Un nouveau Categorie Createur a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Categorie Createur avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Categorie Createur avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Categorie Createur {{ id }} ?"
+      },
+      "detail": {
+        "title": "Categorie Createur"
+      },
+      "id": "ID",
+      "categorie": "Categorie",
+      "description": "Description",
+      "createurAfricain": "Createur Africain"
+    }
+  }
+}

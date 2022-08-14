@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20220814035934",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "transaction",
+  "fields": [
+    {
+      "fieldName": "numeroMtn",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "montant",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "devise",
+      "fieldType": "Devise",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "EURO,CEDI,DLASI,DOLLAR,FCFA,LIVRE,LEONE,NAIRA,YEN"
+    },
+    {
+      "fieldName": "dateTransaction",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Transaction",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

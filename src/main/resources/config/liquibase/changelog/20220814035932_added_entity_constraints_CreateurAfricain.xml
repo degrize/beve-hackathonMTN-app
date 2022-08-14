@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity CreateurAfricain.
+    -->
+    <changeSet id="20220814035932-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="createur_africain_id"
+                                 baseTableName="rel_createur_africain__inspiration"
+                                 constraintName="fk_rel_createur_africain__inspiration__createur_africain_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="createur_africain"/>
+
+        <addForeignKeyConstraint baseColumnNames="inspiration_id"
+                                 baseTableName="rel_createur_africain__inspiration"
+                                 constraintName="fk_rel_createur_africain__inspiration__inspiration_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="inspiration"/>
+
+        <addForeignKeyConstraint baseColumnNames="createur_africain_id"
+                                 baseTableName="rel_createur_africain__categorie_createur"
+                                 constraintName="fk_rel_createur_africain__categ__createur_africain_8c_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="createur_africain"/>
+
+        <addForeignKeyConstraint baseColumnNames="categorie_createur_id"
+                                 baseTableName="rel_createur_africain__categorie_createur"
+                                 constraintName="fk_rel_createur_africain__categ__categorie_createur_c6_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="categorie_createur"/>
+
+        <addForeignKeyConstraint baseColumnNames="createur_africain_id"
+                                 baseTableName="rel_createur_africain__reseaux_sociaux"
+                                 constraintName="fk_rel_createur_africain__resea__createur_africain_2b_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="createur_africain"/>
+
+        <addForeignKeyConstraint baseColumnNames="reseaux_sociaux_id"
+                                 baseTableName="rel_createur_africain__reseaux_sociaux"
+                                 constraintName="fk_rel_createur_africain__reseaux_sociaux__reseaux_sociaux_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="reseaux_sociaux"/>
+    </changeSet>
+</databaseChangeLog>

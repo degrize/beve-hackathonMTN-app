@@ -1,0 +1,26 @@
+{
+  "beveApp": {
+    "categorieCreateur": {
+      "home": {
+        "title": "Categorie Createurs",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Categorie Createur erstellen",
+        "createOrEditLabel": "Categorie Createur erstellen oder bearbeiten",
+        "notFound": "Keine Categorie Createurs gefunden"
+      },
+      "created": "Categorie Createur erstellt mit ID {{ param }}",
+      "updated": "Categorie Createur aktualisiert mit ID {{ param }}",
+      "deleted": "Categorie Createur gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Categorie Createur {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Categorie Createur"
+      },
+      "id": "ID",
+      "categorie": "Categorie",
+      "description": "Description",
+      "createurAfricain": "Createur Africain"
+    }
+  }
+}

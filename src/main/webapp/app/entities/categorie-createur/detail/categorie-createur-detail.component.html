@@ -1,0 +1,38 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="categorieCreateur">
+      <h2 data-cy="categorieCreateurDetailsHeading">
+        <span jhiTranslate="beveApp.categorieCreateur.detail.title">Categorie Createur</span>
+      </h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ categorieCreateur.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.categorieCreateur.categorie">Categorie</span></dt>
+        <dd>
+          <span>{{ categorieCreateur.categorie }}</span>
+        </dd>
+        <dt><span jhiTranslate="beveApp.categorieCreateur.description">Description</span></dt>
+        <dd>
+          <span>{{ categorieCreateur.description }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Retour</span>
+      </button>
+
+      <button type="button" [routerLink]="['/categorie-createur', categorieCreateur.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editer</span>
+      </button>
+    </div>
+  </div>
+</div>

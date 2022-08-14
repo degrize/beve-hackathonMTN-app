@@ -1,0 +1,27 @@
+{
+  "beveApp": {
+    "reseauxSociaux": {
+      "home": {
+        "title": "Reseaux Sociauxes",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Reseaux Sociaux erstellen",
+        "createOrEditLabel": "Reseaux Sociaux erstellen oder bearbeiten",
+        "notFound": "Keine Reseaux Sociauxes gefunden"
+      },
+      "created": "Reseaux Sociaux erstellt mit ID {{ param }}",
+      "updated": "Reseaux Sociaux aktualisiert mit ID {{ param }}",
+      "deleted": "Reseaux Sociaux gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Reseaux Sociaux {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Reseaux Sociaux"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "nomChaine": "Nom Chaine",
+      "lienChaine": "Lien Chaine",
+      "createurAfricain": "Createur Africain"
+    }
+  }
+}

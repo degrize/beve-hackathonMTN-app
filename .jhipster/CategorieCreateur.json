@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20220814035933",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "categorie_createur",
+  "fields": [
+    {
+      "fieldName": "categorie",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CategorieCreateur",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "label",
+      "otherEntityName": "createurAfricain",
+      "otherEntityRelationshipName": "categorieCreateur",
+      "ownerSide": false,
+      "relationshipName": "createurAfricain",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}
